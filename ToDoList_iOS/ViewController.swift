@@ -43,7 +43,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell: UITableViewCell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let taskNameLbl = cell.viewWithTag(2) as! UILabel
         let deadlineLbl = cell.viewWithTag(3) as! UILabel
-        
         taskNameLbl.text = jsonMap[indexPath.row]["TaskName"] as? String
         deadlineLbl.text = jsonMap[indexPath.row]["Deadline"] as? String
         
